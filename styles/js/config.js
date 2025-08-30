@@ -15,8 +15,8 @@ let charadex = {};
 /* Any preview links will still show Charadex's information
 /* ==================================================================== */
 charadex.site = {
-  title: "Charadex",
-  url: "https://charadex-team.github.io/charadex-v1.0/",
+  title: "Kyrlicht",
+  url: "https://kyrlicht.github.io/kyrlicht/",
   description: `A tool for organizing small ARPGs and species.`
 }
 
@@ -26,11 +26,12 @@ charadex.site = {
 /* ==================================================================== */
 charadex.sheet = {
 
-  id: "1GwgfLizD3HQCieGia6di-TfU4E3EipT9Jb0BDZQwNak",
+  id: "14DyGhKdalzp8zkv7UCFIxVZMtJEfrilpEyiRWd0KgaU",
 
   pages: {
     masterlist:    "masterlist",
     masterlistLog: "masterlist log",
+    petml: "pet ml",
     inventory:     "inventory",
     inventoryLog:  "inventory log",
     items:         "items",
