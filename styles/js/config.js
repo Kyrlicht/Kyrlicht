@@ -15,8 +15,8 @@ let charadex = {};
 /* Any preview links will still show Charadex's information
 /* ==================================================================== */
 charadex.site = {
-  title: "Auralym",
-  url: "https://Auralym.github.io/Auralym/",
+  title: "Kyrlicht",
+  url: "https://Kyrlicht.github.io/Kyrlicht/",
   description: `A tool for organizing small ARPGs and species.`
 }
 
@@ -26,7 +26,7 @@ charadex.site = {
 /* ==================================================================== */
 charadex.sheet = {
 
-  id: "1NhuqghYjoiuKDSif7mbZkaRomxJKwAfmnSV_jnvMmJo",
+  id: "14DyGhKdalzp8zkv7UCFIxVZMtJEfrilpEyiRWd0KgaU",
 
   pages: {
     masterlist:    "masterlist",
