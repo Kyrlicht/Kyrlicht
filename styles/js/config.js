@@ -43,13 +43,12 @@ charadex.sheet = {
 
   options: {
 
-    designTypes: ['All', 'Official Design', 'Guest Design', 'MYO Slot', 'MYO Design'],
+    designTypes: ['All', 'NPC', 'Official Design', 'Guest Design', 'MYO Slot', 'MYO Design'],
     statuses: ['All', 'Resell', 'Trade', 'Gift', 'Voided', 'For Sale', 'Purchased'],
-    rarity: ['All', 'Common', 'Uncommon', 'Rare', 'Elder'],
-    species: ['Aurim', 'Lilim', 'Either'],
-    tendency: ['Greed', 'Wrath', 'Gluttony', 'Lust', 'Envy', 'Pride', 'Sloth', 'Standard'],
+    rarity: ['All', 'Common', 'Rare', 'Special'],
+    species: ['Kyrlicht', 'Hound', 'Patron', 'Any'],
     itemTypes: ['All', 'Currency', 'Trait', 'Misc'],
-    traitTypes: ['All', 'Horns', 'Halos', 'Limbs', 'Tails', 'Wings', 'Ears', 'Misc']
+    traitTypes: ['All', 'Crown', 'Matter', 'Head', 'Head Spheres', 'Spheres', 'Tail', 'Mask', 'Blessings']
 
   }
 
@@ -151,7 +150,7 @@ charadex.page.traits = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Tendency', 'Type', 'Species', 'Description', 'Rarity']
+    parameters: ['All', 'Type', 'Species', 'Description', 'Rarity']
   },
 
   prevNext: {
@@ -332,7 +331,7 @@ charadex.page.masterlist = {
     toggle: true,
     parameters: {
       'Design Type': charadex.sheet.options.designTypes,
-      'Tendency': charadex.sheet.options.tendency,
+    
       'Rarity': charadex.sheet.options.rarity,
     }
   },
