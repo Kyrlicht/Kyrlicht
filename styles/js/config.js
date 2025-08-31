@@ -15,8 +15,8 @@ let charadex = {};
 /* Any preview links will still show Charadex's information
 /* ==================================================================== */
 charadex.site = {
-  title: "Kyrlicht",
-  url: "https://kyrlicht.github.io/kyrlicht/",
+  title: "Auralym",
+  url: "https://Auralym.github.io/Auralym/",
   description: `A tool for organizing small ARPGs and species.`
 }
 
@@ -26,12 +26,11 @@ charadex.site = {
 /* ==================================================================== */
 charadex.sheet = {
 
-  id: "14DyGhKdalzp8zkv7UCFIxVZMtJEfrilpEyiRWd0KgaU",
+  id: "1NhuqghYjoiuKDSif7mbZkaRomxJKwAfmnSV_jnvMmJo",
 
   pages: {
     masterlist:    "masterlist",
     masterlistLog: "masterlist log",
-    petml: "pet ml",
     inventory:     "inventory",
     inventoryLog:  "inventory log",
     items:         "items",
@@ -39,16 +38,18 @@ charadex.sheet = {
     prompts:       "prompts",
     faq:           "faq",
     staff:         "mods",
+    adopts:        "adopts",
   },
 
   options: {
 
     designTypes: ['All', 'Official Design', 'Guest Design', 'MYO Slot', 'MYO Design'],
     statuses: ['All', 'Resell', 'Trade', 'Gift', 'Voided', 'For Sale', 'Purchased'],
-    rarity: ['All', 'Common', 'Rare', 'Special',],
-    species: ['All', 'Kyrlicht', 'Hound', 'Patron'],
-    itemTypes: ['All', 'Currency', 'MYO Slot', 'Pet', 'Trait', 'Misc'],
-    traitTypes: ['All', 'Ears', 'Eyes', 'Body', 'Limbs', 'Tails', 'Misc', 'Mutations']
+    rarity: ['All', 'Common', 'Uncommon', 'Rare', 'Elder'],
+    species: ['Aurim', 'Lilim', 'Either'],
+    tendency: ['Greed', 'Wrath', 'Gluttony', 'Lust', 'Envy', 'Pride', 'Sloth', 'Standard'],
+    itemTypes: ['All', 'Currency', 'Trait', 'Misc'],
+    traitTypes: ['All', 'Horns', 'Halos', 'Limbs', 'Tails', 'Wings', 'Ears', 'Misc']
 
   }
 
@@ -88,6 +89,7 @@ charadex.page.items = {
     parameters: {
       'Type': charadex.sheet.options.itemTypes,
       'Rarity': charadex.sheet.options.rarity,
+       
     }
   },
 
@@ -98,7 +100,7 @@ charadex.page.items = {
   },
 
   search: {
-    toggle: true,
+    toggle: false,
     filterToggle: true,
     parameters: ['All', 'Item', 'Rarity']
   },
@@ -135,21 +137,21 @@ charadex.page.traits = {
   filters: {
     toggle: true,
     parameters: {
-      'Type': charadex.sheet.options.traitTypes,
+      'Tendency': charadex.sheet.options.tendency,
       'Rarity': charadex.sheet.options.rarity,
     }
   },
 
   fauxFolder: {
     toggle: true,
-    folderProperty: 'Type',
-    parameters: charadex.sheet.options.traitTypes,
+    folderProperty: 'Species',
+    parameters: charadex.sheet.options.species,
   },
 
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Trait', 'Rarity']
+    parameters: ['All', 'Tendency', 'Type', 'Species', 'Description', 'Rarity']
   },
 
   prevNext: {
@@ -330,7 +332,7 @@ charadex.page.masterlist = {
     toggle: true,
     parameters: {
       'Design Type': charadex.sheet.options.designTypes,
-      'Status': charadex.sheet.options.statuses,
+      'Tendency': charadex.sheet.options.tendency,
       'Rarity': charadex.sheet.options.rarity,
     }
   },
@@ -344,7 +346,7 @@ charadex.page.masterlist = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'ID', 'Design', 'Owner', 'Designer', 'Artist', 'Traits']
+    parameters: ['All', 'Species', 'Tendency', 'Owner', 'Designer', 'Artist', 'Traits']
   },
 
   prevNext: {
@@ -380,6 +382,85 @@ charadex.page.masterlist = {
   }
 
 };
+
+
+/* Open Adopts
+/* --------------------------------------------------------------- */
+charadex.page.adopts = {
+
+  sheetPage: charadex.sheet.pages.adopts,
+  sitePage: 'adopts',
+  dexSelector: 'charadex',
+  profileProperty: 'design',
+
+  sort: {
+    toggle: true,
+    key: "id",
+    order: "desc",
+    parameters: []
+  },
+
+  pagination: {
+    toggle: true,
+    bottomToggle: true,
+    amount: 12,
+  },
+
+  filters: {
+    toggle: true,
+    parameters: {
+      'Design Type': charadex.sheet.options.designTypes,
+      'Tendency': charadex.sheet.options.tendency,
+      'Rarity': charadex.sheet.options.rarity,
+    }
+  },
+
+  fauxFolder: {
+    toggle: true,
+    folderProperty: 'Species',
+    parameters: charadex.sheet.options.species,
+  },
+
+  search: {
+    toggle: true,
+    filterToggle: true,
+    parameters: ['All', 'Species', 'Tendency', 'Owner', 'Designer', 'Artist', 'Traits']
+  },
+
+  prevNext: {
+    toggle: true,
+  },
+
+  relatedData: {
+
+    [charadex.sheet.pages.masterlistLog]: {
+
+      sheetPage: charadex.sheet.pages.masterlistLog,
+      primaryProperty: 'id',
+      relatedProperty: 'id',
+      dexSelector: 'log',
+      profileProperty: 'design',
+      profileToggle: false,
+
+      sort: {
+        toggle: true,
+        key: "timestamp",
+        order: "desc",
+        parameters: []
+      },
+
+      pagination: {
+        toggle: true,
+        bottomToggle: false,
+        amount: 12,
+      },
+
+    }
+
+  }
+
+};
+
 
 /* Inventory
 /* --------------------------------------------------------------- */
