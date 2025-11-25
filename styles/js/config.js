@@ -47,7 +47,7 @@ charadex.sheet = {
     designTypes: ['All', 'NPC', 'Official Design', 'Guest Design', 'MYO Slot', 'MYO Design'],
     statuses: ['All', 'Resell', 'Trade', 'Gift', 'Voided', 'For Sale', 'Purchased'],
     rarity: ['All', 'Common', 'Rare', 'Special'],
-    species: ['Kyrlicht', 'Hound', 'Patron', 'Any'],
+    species: ['Kyrlicht', 'Hound', 'Patron', 'Wolpergeist', 'Any'],
     itemTypes: ['All', 'Currency', 'Trait', 'Misc'],
     traitTypes: ['All', 'Crown', 'Matter', 'Head', 'Head Spheres', 'Spheres', 'Tail', 'Mask', 'Blessings']
 
@@ -382,6 +382,85 @@ charadex.page.masterlist = {
   }
 
 };
+
+
+/* Masterlist
+/* --------------------------------------------------------------- */
+charadex.page.pets = {
+
+  sheetPage: charadex.sheet.pages.pets,
+  sitePage: 'pets',
+  dexSelector: 'charadex',
+  profileProperty: 'design',
+
+  sort: {
+    toggle: true,
+    key: "id",
+    order: "desc",
+    parameters: []
+  },
+
+  pagination: {
+    toggle: true,
+    bottomToggle: true,
+    amount: 12,
+  },
+
+  filters: {
+    toggle: false,
+    parameters: {
+      'Design Type': charadex.sheet.options.designTypes,
+    
+      'Rarity': charadex.sheet.options.rarity,
+    }
+  },
+
+  fauxFolder: {
+    toggle: true,
+    folderProperty: 'Species',
+    parameters: charadex.sheet.options.species,
+  },
+
+  search: {
+    toggle: true,
+    filterToggle: false,
+    parameters: ['All', 'Species', 'Tendency', 'Owner', 'Designer', 'Artist', 'Traits']
+  },
+
+  prevNext: {
+    toggle: true,
+  },
+
+  relatedData: {
+
+    [charadex.sheet.pages.masterlistLog]: {
+
+      sheetPage: charadex.sheet.pages.masterlistLog,
+      primaryProperty: 'id',
+      relatedProperty: 'id',
+      dexSelector: 'log',
+      profileProperty: 'design',
+      profileToggle: false,
+
+      sort: {
+        toggle: true,
+        key: "timestamp",
+        order: "desc",
+        parameters: []
+      },
+
+      pagination: {
+        toggle: true,
+        bottomToggle: false,
+        amount: 12,
+      },
+
+    }
+
+  }
+
+};
+
 
 
 /* Open Adopts
