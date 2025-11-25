@@ -17,7 +17,7 @@ let charadex = {};
 charadex.site = {
   title: "Kyrlicht",
   url: "https://Kyrlicht.github.io/Kyrlicht/",
-  description: `A tool for organizing small ARPGs and species.`
+  description: `A masterlist and information website for the closed species Kyrlicht and subspecies Hounds.`
 }
 
 /* ==================================================================== */
@@ -33,6 +33,7 @@ charadex.sheet = {
     masterlistLog: "masterlist log",
     inventory:     "inventory",
     inventoryLog:  "inventory log",
+    pets:          "pet ml",
     items:         "items",
     traits:        "traits",
     prompts:       "prompts",
@@ -99,9 +100,9 @@ charadex.page.items = {
   },
 
   search: {
-    toggle: false,
+    toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Item', 'Rarity']
+    parameters: ['All', 'Item', 'Rarity', 'Description',]
   },
 
   prevNext: {
@@ -409,7 +410,7 @@ charadex.page.adopts = {
     toggle: true,
     parameters: {
       'Design Type': charadex.sheet.options.designTypes,
-      'Tendency': charadex.sheet.options.tendency,
+      'Tendency': charadex.sheet.options.species,
       'Rarity': charadex.sheet.options.rarity,
     }
   },
