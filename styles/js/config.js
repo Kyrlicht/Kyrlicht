@@ -137,7 +137,7 @@ charadex.page.traits = {
   filters: {
     toggle: true,
     parameters: {
-      'Tendency': charadex.sheet.options.tendency,
+      'Subspecies': charadex.sheet.options.subspecies,
       'Rarity': charadex.sheet.options.rarity,
     }
   },
@@ -346,7 +346,7 @@ charadex.page.masterlist = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Species', 'Tendency', 'Owner', 'Designer', 'Artist', 'Traits']
+    parameters: ['All', 'Subspecies', 'Owner', 'Designer', 'Artist', 'Traits']
   },
 
   prevNext: {
@@ -424,7 +424,7 @@ charadex.page.pets = {
   search: {
     toggle: true,
     filterToggle: false,
-    parameters: ['All', 'Species', 'Tendency', 'Owner', 'Designer', 'Artist', 'Traits']
+    parameters: ['All', 'Species', 'Owner', 'Designer', 'Artist', 'Traits']
   },
 
   prevNext: {
