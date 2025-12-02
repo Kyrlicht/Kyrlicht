@@ -27,7 +27,7 @@ body {
   /* ============================================================= */
   /* Backgrounds
   ================================================================ */
-  --cd-body-background-color: #520f0f;
+  --cd-body-background-color: #ebe5e4;
   --cd-content-background-color: #e9dedb;
   --cd-faded-background-color: #e9dedb;
 
@@ -44,7 +44,7 @@ body {
   /* Borders
   ================================================================ */
   --cd-border-color: #b61506;
-  --cd-border-width: 5px;
+  --cd-border-width: 2px;
   --cd-border-style: solid;
   --cd-border-radius: 1rem;
 
