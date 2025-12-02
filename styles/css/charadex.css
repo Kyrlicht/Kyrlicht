@@ -28,8 +28,8 @@ body {
   /* Backgrounds
   ================================================================ */
   --cd-body-background-color: #520f0f;
-  --cd-content-background-color: #9c4229;
-  --cd-faded-background-color: #f0e5e4;
+  --cd-content-background-color: #e9dedb;
+  --cd-faded-background-color: #e9dedb;
 
   /* Background Extras */
   --cd-body-background-image: url();
@@ -43,7 +43,7 @@ body {
   /* ============================================================= */
   /* Borders
   ================================================================ */
-  --cd-border-color: #d18f56;
+  --cd-border-color: #b61506;
   --cd-border-width: 5px;
   --cd-border-style: solid;
   --cd-border-radius: 1rem;
@@ -51,7 +51,7 @@ body {
   /* ============================================================= */
   /* Navbar
   ================================================================ */
-  --cd-navbar-background-color: #520f0f;
+  --cd-navbar-background-color: #e9dedb;
   --cd-navbar-brand-color: var(--cd-primary-color);
   --cd-navbar-brand-color-hover: var(--cd-secondary-color);
   --cd-navbar-text-color: var(--cd-content-background-color);
