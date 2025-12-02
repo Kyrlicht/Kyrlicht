@@ -27,9 +27,9 @@ body {
   /* ============================================================= */
   /* Backgrounds
   ================================================================ */
-  --cd-body-background-color: #d18f56;
+  --cd-body-background-color: #e9dedb;
   --cd-content-background-color: #ffffff;
-  --cd-faded-background-color: #f8f8f8;
+  --cd-faded-background-color: #9c4229;
 
   /* Background Extras */
   --cd-body-background-image: url();
@@ -43,8 +43,8 @@ body {
   /* ============================================================= */
   /* Borders
   ================================================================ */
-  --cd-border-color: rgba(0, 0, 0, 0.125);
-  --cd-border-width: 1px;
+  --cd-border-color: #d18f56;
+  --cd-border-width: 5px;
   --cd-border-style: solid;
   --cd-border-radius: 1rem;
 
