@@ -137,7 +137,7 @@ charadex.page.traits = {
   filters: {
     toggle: true,
     parameters: {
-      'Subspecies': charadex.sheet.options.subspecies,
+      'Species': charadex.sheet.options.species,
       'Rarity': charadex.sheet.options.rarity,
     }
   },
