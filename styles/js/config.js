@@ -503,7 +503,7 @@ charadex.page.adopts = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Species', 'Tendency', 'Owner', 'Designer', 'Artist', 'Traits']
+    parameters: ['All', 'Species', 'Owner', 'Designer', 'Artist', 'Traits']
   },
 
   prevNext: {
