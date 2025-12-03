@@ -638,7 +638,7 @@ img {
 
 body {
   min-height: 100vh;
-  display: flex;
+  display: contain;
   flex-direction: column;
 }
 
@@ -649,7 +649,7 @@ body {
   flex: 1 1 auto !important;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 750px) {
   #main-container {
     padding: 5rem 1.5rem;
   }
@@ -730,7 +730,7 @@ p:last-child {
   font-size: 2.5rem;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
   .cd-hero-title {
     letter-spacing: 2px;
     font-size: 5rem;
