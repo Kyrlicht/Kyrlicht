@@ -723,7 +723,7 @@ p:last-child {
   background-color: var(--cd-faded-background-color);
   border-radius: var(--cd-border-radius);
   font-family: var(--cd-header-font-family);
-  display: flex;
+  display: contain;
   padding: 1.5rem;
   min-height: 250px;
   font-weight: 800;
