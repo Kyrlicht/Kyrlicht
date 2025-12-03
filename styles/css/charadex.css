@@ -27,7 +27,7 @@ body {
   /* ============================================================= */
   /* Backgrounds
   ================================================================ */
-  --cd-body-background-color: #c2a295;
+  --cd-body-background-color: #520f0f;
   --cd-content-background-color: #282321;
   --cd-faded-background-color: #c2a295;
 
@@ -38,7 +38,7 @@ body {
   /* Text
   ================================================================ */
   --cd-body-text-color: #fcfcfc;
-  --cd-faded-text-color: #575757;
+  --cd-faded-text-color: #fcfcfc;
 
   /* ============================================================= */
   /* Borders
@@ -118,7 +118,7 @@ body {
   /* Link
   ================================================================ */
 
-  --cd-link-text-color: #4c8ebd;
+  --cd-link-text-color: #fcfcfc;
   --cd-link-text-color-hover: var(--cd-secondary-color);
 
 
