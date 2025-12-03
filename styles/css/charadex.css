@@ -27,8 +27,8 @@ body {
   /* ============================================================= */
   /* Backgrounds
   ================================================================ */
-  --cd-body-background-color: #cc9c8f;
-  --cd-content-background-color: #bf8c7e;
+  --cd-body-background-color: #e9dedb;
+  --cd-content-background-color: #282321;
   --cd-faded-background-color: #ebe5e4;
 
   /* Background Extras */
@@ -51,7 +51,7 @@ body {
   /* ============================================================= */
   /* Navbar
   ================================================================ */
-  --cd-navbar-background-color: #cc9c8f;
+  --cd-navbar-background-color: #282321;
   --cd-navbar-brand-color: var(--cd-primary-color);
   --cd-navbar-brand-color-hover: var(--cd-secondary-color);
   --cd-navbar-text-color: var(--cd-content-background-color);
