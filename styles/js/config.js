@@ -48,7 +48,7 @@ charadex.sheet = {
     statuses: ['All', 'Resell', 'Trade', 'Gift', 'Voided', 'For Sale', 'Purchased'],
     rarity: ['All', 'Common', 'Rare', 'Special'],
     species: ['Kyrlicht', 'Hound', 'Patron', 'Wolpergeist', 'Any'],
-    itemTypes: ['All', 'Currency', 'Trait', 'Misc'],
+    itemTypes: ['All', 'Currency', 'Trait', 'Creature', 'Misc'],
     traitTypes: ['All', 'Crown', 'Matter', 'Head', 'Head Spheres', 'Spheres', 'Tail', 'Mask', 'Blessings']
 
   }
