@@ -29,7 +29,7 @@ body {
   ================================================================ */
   --cd-body-background-color: #4a2222;
   --cd-content-background-color: #282321;
-  --cd-faded-background-color: #7a6a6a;
+  --cd-faded-background-color: #524242;
 
   /* Background Extras */
   --cd-body-background-image: url();
@@ -730,7 +730,7 @@ p:last-child {
   font-size: 2.5rem;
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 400px) {
   .cd-hero-title {
     letter-spacing: 2px;
     font-size: 5rem;
