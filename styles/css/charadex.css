@@ -29,7 +29,7 @@ body {
   ================================================================ */
   --cd-body-background-color: #4a2222;
   --cd-content-background-color: #282321;
-  --cd-faded-background-color: #c2a295;
+  --cd-faded-background-color: #9c8a8a;
 
   /* Background Extras */
   --cd-body-background-image: url();
@@ -44,7 +44,7 @@ body {
   /* Borders
   ================================================================ */
   --cd-border-color: #a81616;
-  --cd-border-width: 2px;
+  --cd-border-width: 1px;
   --cd-border-style: solid;
   --cd-border-radius: 1rem;
 
