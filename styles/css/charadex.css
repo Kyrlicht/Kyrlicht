@@ -16,18 +16,18 @@ body {
   /* Primary Color
   ================================================================ */
   --cd-primary-color: #bf8c7e;
-  --cd-primary-text-color: #fff;
+  --cd-primary-text-color: #fcfcfc;
 
   /* ============================================================= */
   /* Secondary Color
   ================================================================ */
   --cd-secondary-color: #e9dedb;
-  --cd-secondary-text-color: #fff;
+  --cd-secondary-text-color: #fcfcfc;
 
   /* ============================================================= */
   /* Backgrounds
   ================================================================ */
-  --cd-body-background-color: #520f0f;
+  --cd-body-background-color: #4a2222;
   --cd-content-background-color: #282321;
   --cd-faded-background-color: #c2a295;
 
@@ -54,9 +54,9 @@ body {
   --cd-navbar-background-color: #282321;
   --cd-navbar-brand-color: var(--cd-primary-color);
   --cd-navbar-brand-color-hover: var(--cd-secondary-color);
-  --cd-navbar-text-color: var(--cd-content-background-color);
-  --cd-navbar-link-color: var(--cd-navbar-text-color);
-  --cd-navbar-link-color-hover: var(--cd-primary-color);
+  --cd-navbar-text-color: #fcfcfc;
+  --cd-navbar-link-color: #fcfcfc;
+  --cd-navbar-link-color-hover: #a81616;
   --cd-navbar-font-family: var(--cd-header-font-family);
 
   /* ============================================================= */
